@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const uri =
-  'mongodb+srv://admin:<password>@cluster0.qzyenjy.mongodb.net/maindb?retryWrites=true&w=majority';
+  'mongodb+srv://admin:<password>@<clusterurl>/<dbname>?retryWrites=true&w=majority';
 mongoose.pluralize(null);
 mongoose.connect(uri);
 const dbconn = mongoose.connection;
